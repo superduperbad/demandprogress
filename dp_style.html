@@ -1,0 +1,90 @@
+{% comment %}This is a placeholder for your new template! Include your template in another using {% include "./dp_style.html" %} or {% extends "./dp_style.html" %}.{% endcomment %}
+            
+.ak-page-header{
+	border-bottom:24px solid #a11411;
+	height: 72px;
+}
+
+@media screen and (max-width: 500px){
+    .ak-page-header{
+	    border-bottom:10px solid #a11411;
+	    height: 38px;
+    }
+}
+
+.ak-page-header-contents h1{
+    background: url('https://s3.amazonaws.com/aktest-2011/images/Logo-new-site-rectangle-600x6011.png');
+    background-repeat: no-repeat;
+    text-indent:-9999px;
+    background-size:400px;
+    transition: width 2s linear 1s;
+	margin-top: 4px;
+}
+
+@media screen and (max-width: 500px){
+    .ak-page-header-contents h1{
+        background-size:210px;
+        transition: width 2s linear 1s;
+        margin-top: 8px;
+    }
+}
+
+h2 {
+    color: #9f1719;
+    margin-top: 10px;
+}
+
+.statement-text-wrapper {
+    border-radius: 0;
+    border: 1px solid #a01618;
+    background: #f0f0f0;
+}
+
+body.ak-pagetype-petition button.ak-submit-button,
+button{
+    background-color: #030428;
+    border-radius: 0;
+    transition: .2s;
+    width: auto;
+    padding-left:30px;
+    padding-right:30px;
+    font-size: 1em;
+    border: 1px solid #fff;
+    outline: 2px solid #030428;
+}
+
+body.ak-pagetype-petition button.ak-submit-button:hover,
+button:hover{
+    background-color: #9f1719;
+    outline: 2px solid #9f1719;
+}
+
+
+@media screen and (max-width: 749px){
+    .ak-field-box {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}
+
+.ak-pagetype-petition #ak-petition-story .ak-field-box{
+    border-radius: 0;
+    border: 1px solid #bbb;
+    background: #f0f0f0;
+}
+
+.ak-styled-fields input[name="zip"], .ak-styled-fields input[name="event_zip"]{ width: 100%; }
+
+.ak-pagetype-petition .statement-text-wrapper h3{ display: none; }
+
+.align-right {float:right;}
+.align-left {float:left;}
+
+.ak-pagetype-petition .ak-grid-col:not(:first-child).align-left {
+    margin-left: 0;
+    margin-right: 2%; 
+}
+
+.legal_text{ font-size:.8em;  }
+
